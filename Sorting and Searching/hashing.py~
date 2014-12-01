@@ -1,0 +1,6 @@
+def hash(string,table_size):
+	sum = 0
+	for pos in range(0,len(string)):
+		sum = sum + ord(string[pos])
+	return sum % table_size
+print hash("cat",11)
